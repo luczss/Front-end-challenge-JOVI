@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCam AI — Toda foto começa com um olhar certeiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="wrap nav">
+            <a href="#top" class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                SmartCam <span style="color:var(--text-muted)">AI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#solucao">A Solução</a></li>
+                <li><a href="#publico">Público-Alvo</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#equipe">Nossa Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="#contato" class="btn btn-primary nav-cta">Falar com a equipe</a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu"
+                aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#solucao">A Solução</a>
+            <a href="#publico">Público-Alvo</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#equipe">Nossa Equipe</a>
+            <a href="#contato">Contato</a>
+            <a href="#contato" class="btn btn-primary">Falar com a equipe</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" aria-label="Apresentação">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">FIAP · JOVI Challenge 2026</p>
+                    <h1>Toda foto começa com um <em>olhar certeiro.</em></h1>
+                    <p>SmartCam AI é uma câmera inteligente que enxerga a cena antes de você apertar o botão — detecta o
+                        momento, ajusta o enquadramento e garante qualidade, tudo local, tudo offline.</p>
+                    <div class="hero-actions">
+                        <a href="#solucao" class="btn btn-primary">Ver como funciona</a>
+                        <a href="#equipe" class="btn btn-ghost">Conhecer a equipe</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><b>&lt;1s</b><span>para detectar a cena</span></div>
+                        <div><b>≥90%</b><span>de precisão na classificação</span></div>
+                        <div><b>100%</b><span>processamento on-device</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="phone" role="img"
+                        aria-label="Simulação da interface do SmartCam AI mostrando detecção de cena, foco e score de qualidade">
+                        <div class="screen">
+                            <div class="thirds"></div>
+                            <span class="bracket tl"></span>
+                            <span class="bracket tr"></span>
+                            <span class="bracket bl"></span>
+                            <span class="bracket br"></span>
+                            <div class="hud-top"><span class="mode-chip">Modo Retrato detectado</span></div>
+                            <div class="hud-focus">
+                                <span class="bracket tl"></span>
+                                <span class="bracket tr"></span>
+                                <span class="bracket bl"></span>
+                                <span class="bracket br"></span>
+                            </div>
+                            <div class="hud-bottom">
+                                <div class="quality-bar"><i></i></div>
+                                <div class="hud-label"><span>QUALIDADE</span><span>92%</span></div>
+                            </div>
+                        </div>
+                        <div class="shutter"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== A SOLUÇÃO ===================== -->
+        <section id="solucao" class="section" aria-labelledby="solucao-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">A Solução</p>
+                    <h2 id="solucao-title">Uma IA que pensa a foto junto com você</h2>
+                    <p>Estudantes full-time e criadores de conteúdo não têm tempo para dominar configurações manuais de
+                        câmera — e acabam perdendo momentos por foco ruim, enquadramento torto ou imagem tremida. O
+                        SmartCam AI resolve isso analisando a cena em tempo real, on-device, e guiando (ou
+                        automatizando) cada captura para o melhor resultado possível.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature">
+                        <span class="num">01</span>
+                        <div class="feature-icon" aria-hidden="true">◎</div>
+                        <h3>Detecção automática de cena</h3>
+                        <p>Reconhece retrato, paisagem, noite ou ação em até 1 segundo, com precisão ≥90%, e mostra o
+                            modo direto na interface.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="num">02</span>
+                        <div class="feature-icon" aria-hidden="true">▦</div>
+                        <h3>Sugestão de enquadramento</h3>
+                        <p>Overlay não intrusivo, ativado apenas quando a confiança da IA é alta. Aceitar ou ignorar é
+                            sempre decisão sua.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="num">03</span>
+                        <div class="feature-icon" aria-hidden="true">◈</div>
+                        <h3>Feedback em tempo real</h3>
+                        <p>Alertas visuais de foco, luminosidade e estabilidade, atualizados a cada 500ms, antes mesmo
+                            de você capturar.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="num">04</span>
+                        <div class="feature-icon" aria-hidden="true">⚡</div>
+                        <h3>Modo Correria</h3>
+                        <p>Um gesto ativa a captura automática assim que o score de qualidade atinge 95% — ideal para
+                            quem está sempre em movimento.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="num">05</span>
+                        <div class="feature-icon" aria-hidden="true">✓</div>
+                        <h3>Score de qualidade</h3>
+                        <p>Nitidez, exposição e composição avaliadas na hora, com opção de recapturar direto na tela de
+                            resultado.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="num">06</span>
+                        <div class="feature-icon" aria-hidden="true">⇌</div>
+                        <h3>100% offline</h3>
+                        <p>Modelo de IA leve (≤50MB) rodando totalmente on-device — sem Wi-Fi, sem dados, sem perda de
+                            funcionalidade.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PÚBLICO-ALVO ===================== -->
+        <section id="publico" class="section" aria-labelledby="publico-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Público-Alvo</p>
+                    <h2 id="publico-title">Feito para quem não pode perder o momento</h2>
+                    <p>O SmartCam AI foi desenhado a partir das dores de três perfis que vivem no ritmo acelerado do dia
+                        a dia acadêmico e criativo, e que precisam de resultado bom sem esforço técnico.</p>
+                </div>
+
+                <div class="persona-grid">
+                    <article class="persona panel">
+                        <div class="persona-avatar" aria-hidden="true">E</div>
+                        <div>
+                            <span class="tag">Perfil primário</span>
+                            <h3>Estudante full-time</h3>
+                            <p>Divide aula, trabalho e vida social — quer registrar o momento sem parar para configurar
+                                nada. Usa o Modo Correria no dia a dia.</p>
+                        </div>
+                    </article>
+                    <article class="persona panel">
+                        <div class="persona-avatar" aria-hidden="true">C</div>
+                        <div>
+                            <span class="tag">Perfil secundário</span>
+                            <h3>Criador de conteúdo</h3>
+                            <p>Precisa de fotos e vídeos com boa composição para redes sociais, mas sem tempo para
+                                aprender técnicas de enquadramento manual.</p>
+                        </div>
+                    </article>
+                    <article class="persona panel">
+                        <div class="persona-avatar" aria-hidden="true">A</div>
+                        <div>
+                            <span class="tag">Perfil avançado</span>
+                            <h3>Usuário avançado</h3>
+                            <p>Gosta de controle total quando quer — por isso pode desativar a IA e assumir foco, ISO e
+                                exposição manualmente a qualquer momento.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== GALERIA ===================== -->
+        <section id="galeria" class="section" aria-labelledby="galeria-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Galeria</p>
+                    <h2 id="galeria-title">A interface em ação</h2>
+                    <p>Simulações da experiência SmartCam AI nos principais momentos do fluxo de captura.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <article class="shot panel">
+                        <div class="shot-frame">
+                            <div class="thirds"></div>
+                            <span class="shot-badge">Cena</span>
+                            <div class="shot-center-icon" aria-hidden="true">◎</div>
+                        </div>
+                        <h4>Detecção de cena</h4>
+                        <p>Ícone do modo identificado aparece como overlay leve na interface.</p>
+                    </article>
+                    <article class="shot panel">
+                        <div class="shot-frame">
+                            <div class="thirds"></div>
+                            <span class="shot-badge">Enquadramento</span>
+                            <div class="shot-center-icon" aria-hidden="true">▦</div>
+                        </div>
+                        <h4>Sugestão de composição</h4>
+                        <p>Guia baseado na regra dos terços exibido só quando a confiança é alta.</p>
+                    </article>
+                    <article class="shot panel">
+                        <div class="shot-frame">
+                            <div class="thirds"></div>
+                            <span class="shot-badge">Correria</span>
+                            <div class="shot-center-icon" aria-hidden="true">⚡</div>
+                        </div>
+                        <h4>Modo Correria ativo</h4>
+                        <p>Interface simplificada, monitorando o score até disparar a captura sozinha.</p>
+                    </article>
+                    <article class="shot panel">
+                        <div class="shot-frame">
+                            <div class="thirds"></div>
+                            <span class="shot-badge">Resultado</span>
+                            <div class="shot-center-icon" aria-hidden="true">✓</div>
+                        </div>
+                        <h4>Score pós-captura</h4>
+                        <p>Nitidez, exposição e composição exibidos na hora, com opção de recapturar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== NOSSA EQUIPE ===================== -->
+        <section id="equipe" class="section" aria-labelledby="equipe-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Nossa Equipe</p>
+                    <h2 id="equipe-title">Quem construiu o SmartCam AI</h2>
+                    <p>Time responsável pelo SmartCam AI no JOVI Challenge 2026.</p>
+                </div>
+
+                <div class="team-grid">
+                    <article class="member panel">
+                        <div class="member-avatar" aria-hidden="true">Guzeli</div>
+                        <h3>Eduardo Guzeli Nogueira</h3>
+                        <span class="rm">RM571143</span>
+                    </article>
+                    <article class="member panel">
+                        <div class="member-avatar" aria-hidden="true">Augusto</div>
+                        <h3>Diego Caio de Ulhôa</h3>
+                        <span class="rm">RM572190</span>
+                    </article>
+                    <article class="member panel">
+                        <div class="member-avatar" aria-hidden="true">Lucas</div>
+                        <h3>Lucas dos Santos Oliveira</h3>
+                        <span class="rm">RM571718</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTATO ===================== -->
+        <section id="contato" class="section" aria-labelledby="contato-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Contato</p>
+                    <h2 id="contato-title">Vamos conversar sobre o projeto</h2>
+                    <p>Dúvidas, feedback ou interesse em colaborar com o SmartCam AI? Fale com a equipe.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="item">
+                            <span class="ico" aria-hidden="true">✉</span>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>smartcamai.jovi@fiap.com.br</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="ico" aria-hidden="true">🏫</span>
+                            <div>
+                                <h4>Instituição</h4>
+                                <address>FIAP · JOVI Challenge 2026 — Turma 1-ESPF</address>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="ico" aria-hidden="true">👤</span>
+                            <div>
+                                <h4>Orientação</h4>
+                                <p>Prof. Luis Roberto Guerreiro Lopes</p>
+                            </div>
+                        </div>
+                        <div class="social-row">
+                            <a href="#" aria-label="Instagram">◐</a>
+                            <a href="#" aria-label="LinkedIn">in</a>
+                            <a href="#" aria-label="GitHub">⌥</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form panel" onsubmit="return false;">
+                        <div class="field">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem"
+                                placeholder="Conte um pouco sobre o motivo do contato" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-grid">
+            <p>© 2026 SmartCam AI Team — FIAP · JOVI Challenge. Projeto acadêmico, Sprint 3.</p>
+            <nav class="footer-links">
+                <a href="#solucao">A Solução</a>
+                <a href="#publico">Público-Alvo</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
