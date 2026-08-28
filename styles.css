@@ -391,8 +391,12 @@ section {
 
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.hero-stats div {
+    min-width: 0;
 }
 
 .hero-stats div b {
@@ -669,7 +673,7 @@ section {
     opacity: .5;
 }
 
-.shot h4 {
+.shot h3 {
     font-size: 15px;
     margin-bottom: 6px;
 }
@@ -743,6 +747,12 @@ section {
     display: block;
 }
 
+.member .role {
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
 /* ---- Contato ---- */
 .contact-grid {
     display: grid;
@@ -773,7 +783,7 @@ section {
     font-size: 15px;
 }
 
-.contact-info h4 {
+.contact-info h3 {
     font-size: 14.5px;
     margin-bottom: 3px;
 }
@@ -888,6 +898,11 @@ form.contact-form {
 
 /* ============ TABLET ============ */
 @media (min-width:700px) {
+    .hero-stats {
+        grid-template-columns: repeat(3, auto);
+        gap: 28px;
+    }
+
     .feature-grid {
         grid-template-columns: repeat(2, 1fr);
     }
